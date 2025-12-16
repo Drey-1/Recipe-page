@@ -18,8 +18,8 @@ The objective of this project was to replicate a static design as accurately as 
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/your-solution-link)
-- [Live Site URL]( https://your-live-site-link)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-css-and-html-page-using-bem-and-mobile-first-convetions--ie6MAZSuY)
+- [Live Site URL](https://drey-1.github.io/Recipe-page/)
 
 ## Performance & Quality
 
