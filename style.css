@@ -1,0 +1,229 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/outfit/outfit-v15-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/outfit/outfit-v15-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/outfit/outfit-v15-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Young Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/young-serif/young-serif-v2-latin-regular.woff2') format('woff2');
+}
+
+/* RESET */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img, picture, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+:root {
+  --WHITE: hsl(0, 0%, 100%);
+  --STONE-100: rgba(243, 230, 216, 1);
+  --STONE-150: rgba(228, 222, 216, 1);
+  --STONE-600: rgba(95, 87, 78, 1);
+  --STONE-900: rgba(48, 45, 44, 1);
+  --BROWN-800: rgba(133, 70, 50, 1);
+  --ROSE-800: rgba(123, 40, 79, 1);
+  --ROSE-50: rgba(255, 245, 250, 1);
+
+  --TEXT-R: 1rem;
+  --TEXT-L: 2rem;
+  --TEXT-XL: 3rem;
+
+
+}
+
+.card {}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card__image {}
+
+.card__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card__section:not(:last-child) {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--STONE-150);
+}
+
+.card__section:last-child {
+  padding-top: 2rem;
+}
+
+.card__title {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: var(--STONE-900);
+  line-height: 2rem;
+}
+
+.card__sec-title{
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: var(--BROWN-800);
+}
+
+.card__description {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: var(--STONE-600);
+}
+
+.card__section--prep-time {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1rem;
+  background-color: var(--ROSE-50);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.card__section--prep-time > .card__sec-title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  color: var(--ROSE-800);
+}
+
+.card__section--prep-time > .card__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: var(--ROSE-800);
+  list-style-type: disc;
+}
+
+.card__section--prep-time > .card__text {
+  
+}
+
+.card__section--prep-time > .card__highlight {}
+
+.card__sec-title {}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: var(--BROWN-800);
+  gap: 0.7rem;
+  margin-left: 1.4rem;
+  list-style-type: disc;
+
+}
+
+.card__list--number {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  list-style-type: decimal;
+
+}
+
+.card__item {}
+
+.card__text {
+  font-size: var(--TEXT-R);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  line-height: 1.4rem;
+  margin-left: 1rem;
+  color: var(--STONE-600);
+}
+
+.card__highlight {
+  font-size: var(--TEXT-R);
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  color: var(--STONE-600);
+}
+
+.card__table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.card__row {
+  width: 100%;
+  
+}
+
+.card__row:not(:last-child) {
+  border-bottom: 1px solid var(--STONE-150);
+}
+
+.card__label {
+  width: 50%;
+  padding: 0.7rem 0rem 0.7rem 2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  text-align: start;
+  color: var(--STONE-600);
+}
+
+.card__value {
+  width: 50%;
+  padding: 0.7rem 2rem 0.7rem 0rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  text-align: start;
+  color: var(--BROWN-800);
+}
+
