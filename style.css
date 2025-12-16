@@ -70,21 +70,26 @@ ul, ol {
   --ROSE-50: rgba(255, 245, 250, 1);
 
   --TEXT-R: 1rem;
-  --TEXT-L: 2rem;
-  --TEXT-XL: 3rem;
+  --TEXT-L: 1.25rem;
+  --TEXT-LL: 1.7rem;
+  --TEXT-XL: 2.5rem;
 
 
 }
 
-.card {}
+.page{
+  background-color: var(--STONE-100);
+}
+
+.card {
+  background-color: var(--WHITE);
+}
 
 .card__content {
   display: flex;
   flex-direction: column;
   padding: 2rem;
 }
-
-.card__image {}
 
 .card__intro {
   display: flex;
@@ -108,19 +113,22 @@ ul, ol {
 }
 
 .card__title {
+  font-size: var(--TEXT-XL);
   font-family: "Young Serif", serif;
   font-weight: 400;
   color: var(--STONE-900);
-  line-height: 2rem;
+  line-height: 1.2;
 }
 
 .card__sec-title{
+  font-size: var(--TEXT-LL);
   font-family: "Young Serif", serif;
   font-weight: 400;
   color: var(--BROWN-800);
 }
 
 .card__description {
+  font-size: var(--TEXT-R);
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   color: var(--STONE-600);
@@ -137,6 +145,7 @@ ul, ol {
 }
 
 .card__section--prep-time > .card__sec-title {
+  font-size: var(--TEXT-L);
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   color: var(--ROSE-800);
@@ -150,14 +159,6 @@ ul, ol {
   list-style-type: disc;
 }
 
-.card__section--prep-time > .card__text {
-  
-}
-
-.card__section--prep-time > .card__highlight {}
-
-.card__sec-title {}
-
 .card__list {
   display: flex;
   flex-direction: column;
@@ -170,13 +171,12 @@ ul, ol {
 }
 
 .card__list--number {
+  font-size: var(--TEXT-R);
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   list-style-type: decimal;
 
 }
-
-.card__item {}
 
 .card__text {
   font-size: var(--TEXT-R);
@@ -211,7 +211,8 @@ ul, ol {
 
 .card__label {
   width: 50%;
-  padding: 0.7rem 0rem 0.7rem 2rem;
+  padding: 0.8rem 0rem 0.8rem 2rem;
+  font-size: var(--TEXT-R);
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   text-align: start;
@@ -220,10 +221,41 @@ ul, ol {
 
 .card__value {
   width: 50%;
-  padding: 0.7rem 2rem 0.7rem 0rem;
+  padding: 0.8rem 2rem 0.8rem 0rem;
+  font-size: var(--TEXT-R);
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   text-align: start;
   color: var(--BROWN-800);
 }
 
+@media (min-width: 768px) {
+  .page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding-block: 6rem
+  }
+  .card{
+    max-width: 90%;
+    padding: 2rem;
+    border-radius: 1.8rem;
+  }
+
+  .card__content{
+    padding: 0;
+  }
+
+  .card__image {
+    width: auto;
+    scale: 1 / 1;
+    margin-bottom: 2rem;
+    border-radius: 0.6rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card {
+    max-width: 60%;
+  }
+}
